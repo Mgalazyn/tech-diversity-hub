@@ -1,0 +1,7 @@
+.hero-section {
+    background: url("../../../assets/hero-background3.jpg") no-repeat center;
+    background-size: cover;
+    width: 150%;
+    height: 100vh;
+    margin-left: -25%;
+}
