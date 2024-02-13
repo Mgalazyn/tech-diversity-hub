@@ -1,7 +1,22 @@
 .hero-section {
     background: url("../../../assets/hero-background3.jpg") no-repeat center;
     background-size: cover;
-    width: 150%;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.hero-section::before {
+    background-color: rgba(0,0,0,0.3);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
     height: 100vh;
-    margin-left: -25%;
+    z-index: 1;
+    position: relative;
 }
