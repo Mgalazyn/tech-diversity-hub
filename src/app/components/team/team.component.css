@@ -1,6 +1,6 @@
 .team-section {
     margin-top: 60px;
-    height: 100vh;
+    height: 120vh;
 }
 
 .team {
@@ -15,4 +15,17 @@
 
 .cards-wrapper {
     padding: 50px;
+}
+
+.card {
+    width: 100%;
+    max-width: 24rem;
+    margin: 20px;
+}
+
+@media (min-width: 1376px) {
+    .cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
