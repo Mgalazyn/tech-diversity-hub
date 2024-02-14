@@ -10,11 +10,14 @@
 }
 
 .center-cards-wrapper {
-    padding: 50px;
+    gap: 8px;
 }
 
 .container {
     padding-top: 60px;
+    font-size: clamp(50px, 8vw, 80px);
+    text-align: center;
+    justify-content: center;
 }
 
 .card {
@@ -44,5 +47,36 @@
     .center-cards-wrapper {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1076px) {
+    .card-img-overlay h1 {
+        font-size: 24px;
+    }
+    .card-img-overlay p {
+        font-size: 16px;
+    }
+    .center-cards-wrapper {
+        gap: 2px;
+    }
+}
+
+
+@media (max-width: 846px) {
+    .card-img-overlay h1 {
+        font-size: 20px;
+    }
+    .card-img-overlay p {
+        font-size: 8px;
+    }
+    .center-cards-wrapper {
+        gap: 2px;
+    }
+    .card {
+        width: 100%;
+        max-width: 28rem;
+        height: 30rem;
+        margin: 10px;
     }
 }

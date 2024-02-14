@@ -14,7 +14,7 @@
 }
 
 .cards-wrapper {
-    padding: 50px;
+    gap:24px;
 }
 
 .card {

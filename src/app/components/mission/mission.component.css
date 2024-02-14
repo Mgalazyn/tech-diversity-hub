@@ -1,0 +1,16 @@
+.mission-section {
+    padding: 100px;
+    height: 100vh;
+}
+
+
+.card-img {
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.right-half {
+    margin-top: -150px;
+}
