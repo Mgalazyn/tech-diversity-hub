@@ -67,6 +67,10 @@ h3 {
     width: 70px;
 }
 
+.list li a {
+    text-decoration: none;
+}
+
 .icons-wrapper {
     gap: 44px;
     margin-top: 40px;
