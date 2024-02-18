@@ -21,7 +21,29 @@
     width: 100%;
     max-width: 24rem;
     margin: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: transform 1s ease-in-out; 
+    animation: rotateY 1s ease-in-out forwards;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range: 300px 600px;
 }
+
+@keyframes rotateY {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(90deg);
+    }
+}
+
+.card:hover {
+    animation: rotateY 1s ease-in-out forwards; 
+}
+
 
 @media (min-width: 1376px) {
     .cards-wrapper {
