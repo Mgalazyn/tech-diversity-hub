@@ -10,6 +10,10 @@
     background-color: #D1AD33;
 }
 
+.btn-wrapper {
+    padding-top: 30%;
+}
+
 .partnership-img {
     display: flex;
     align-items: center;
