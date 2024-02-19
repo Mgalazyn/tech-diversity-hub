@@ -19,7 +19,7 @@
 
 
 .container {
-    padding-top: 60px;
+    padding-top: 10px;
     font-size: clamp(50px, 8vw, 80px);
     text-align: center;
     justify-content: center;
