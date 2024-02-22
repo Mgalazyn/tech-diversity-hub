@@ -23,11 +23,5 @@
 
 .icons-wrapper {
     margin-top: 20px;
-    gap: 250px;
-}
-
-@media (max-width: 1376px) {
-    .icons-wrapper {
-        gap: 125px;
-    }
+    gap: 50px;
 }
