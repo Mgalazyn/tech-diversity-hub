@@ -1,6 +1,5 @@
 .partnership-section {
     max-width: 99%;
-    height: 70vh;
 }
 
 .left-half {
@@ -9,6 +8,10 @@
 
 .right-half {
     background-color: #D1AD33;
+}
+
+.btn-wrapper {
+    padding-top: 30%;
 }
 
 .partnership-img {

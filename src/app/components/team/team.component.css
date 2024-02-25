@@ -1,6 +1,7 @@
 .team-section {
     margin-top: 60px;
-    height: 120vh;
+    height: 100%;
+    padding-bottom: 50px;
 }
 
 .team {
@@ -14,41 +15,83 @@
 }
 
 .cards-wrapper {
-    gap:24px;
+    --spacer: 1rem;
+    max-width: 75%;
+    gap: var(--spacer);
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 33%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+
+/* Webkit scrollbar styling */
+.cards-wrapper::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+.cards-wrapper::-webkit-scrollbar-track {
+    background-color: grey; 
+    border-radius: 15px;
+}
+
+.cards-wrapper::-webkit-scrollbar-thumb {
+    background-color: #D1AD33;
+    border-radius: 15px; 
+}
+
+.cards-wrapper::-webkit-scrollbar-button {
+    display: none;
 }
 
 .card {
     width: 100%;
     max-width: 24rem;
     margin: 20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    transition: transform 1s ease-in-out; 
-    animation: rotateY 1s ease-in-out forwards;
-    animation: fade-in linear;
-    animation-timeline: view();
-    animation-range: 300px 600px;
+    box-shadow: var(--shadow-2);
 }
 
-@keyframes rotateY {
-    from {
-        transform: rotateY(0deg);
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding: var(--spacer);
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+} 
+
+.scroll-left {
+    margin: 10px;
+    opacity: 0.8;
+    color: #D1AD33;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .scroll-right {
+    margin: 20px;
+    opacity: 0.8;
+    color: #D1AD33;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+  }
+
+@media (max-width: 1376px) {
+    .card {
+        flex: 0 0 calc(50% - 36px); 
     }
-    to {
-        transform: rotateY(90deg);
-    }
 }
 
-.card:hover {
-    animation: rotateY 1s ease-in-out forwards; 
-}
-
-
-@media (min-width: 1376px) {
+@media (max-width: 768px) {
     .cards-wrapper {
-        display: flex;
-        flex-wrap: wrap;
+        grid-auto-columns: 100%; 
+    }
+
+    .card {
+        max-width: calc(100% - 24px); 
     }
 }
-

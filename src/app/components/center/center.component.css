@@ -1,7 +1,7 @@
 .center-section {
     background: grey;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .center {
@@ -10,6 +10,9 @@
 }
 
 .center-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -21,7 +24,7 @@
 }
 
 .card {
-    width: 100%;
+    flex: 1 1 auto; /* Elastyczność karty */
     max-width: 28rem;
     height: 38rem;
     margin: 10px;
@@ -43,40 +46,8 @@
     font-size: 16px;
 }
 
-@media (min-width: 1506px) {
-    .center-cards-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 1076px) {
-    .card-img-overlay h1 {
-        font-size: 24px;
-    }
-    .card-img-overlay p {
-        font-size: 16px;
-    }
-    .center-cards-wrapper {
-        gap: 2px;
-    }
-}
-
-
-@media (max-width: 846px) {
-    .card-img-overlay h1 {
-        font-size: 20px;
-    }
-    .card-img-overlay p {
-        font-size: 8px;
-    }
-    .center-cards-wrapper {
-        gap: 2px;
-    }
+@media (max-width: 1386px) {
     .card {
-        width: 100%;
-        max-width: 28rem;
-        height: 30rem;
-        margin: 10px;
+        flex-basis: calc(50% - 20px); /* Dwie kolumny na ekranach o szerokości do 1386px */
     }
 }
