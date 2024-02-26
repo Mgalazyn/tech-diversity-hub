@@ -1,3 +1,5 @@
+DEPLOYED BETA VERSION: https://mgalazyn.github.io/tech-diversity-hub/ 
+
 # TechDiversityHub
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
