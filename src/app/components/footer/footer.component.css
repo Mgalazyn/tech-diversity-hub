@@ -174,7 +174,7 @@ hr.solid {
     .icons-wrapper ul {
       flex-direction: column;
     }
-  
+
     .icons-wrapper ul li {
       margin-bottom: 10px;
     }
@@ -187,5 +187,6 @@ hr.solid {
 
     .footer-content p{
         font-size: 12px;
+        flex-direction: column;
     }
   }
