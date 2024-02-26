@@ -20,3 +20,45 @@
     z-index: 1;
     position: relative;
 }
+
+
+/* .fixed-btn {
+    background-color: #D1AD33;
+    position: fixed;
+    z-index: 1;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 14px 42px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-right: 30px;
+    margin-left: 30px;
+} */
+
+.fixed-btn{
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    background:  grey;
+    z-index: 3;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px  grey;
+    cursor: pointer;
+  }
+  
+  .fixed-btn p{
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: 900;
+    color:  #D1AD33;
+  }
+  
+  .fixed-btn:active{
+    box-shadow: 0  0;
+  }
