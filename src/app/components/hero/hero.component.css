@@ -71,12 +71,14 @@
 .left-half {
   background-color: rgb(26, 236, 226);
   height: 100lvh;
-  width: 100%;  
+  width: 100%;
+  font-weight: 500;
 }
 
 .right-half {
   height: 100lvh;
   width: 100%; 
+  font-weight: 500;
 }
 
 .top-half {

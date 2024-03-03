@@ -8,8 +8,9 @@ import { PartnershipComponent } from './partnership/partnership.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SocialsComponent } from './socials/socials.component';
 import { TeamComponent } from './team/team.component';
-import { ResponsiveTeamComponent } from './responsive_team/responsive-team/responsive-team.component';
+import { ResponsiveTeamComponent } from './responsive_team/responsive-team.component';
 import { CenterComponent } from './center/center.component';
+import { quotesComponent } from './quotes/quotes.component';
 
 
 
@@ -24,7 +25,8 @@ import { CenterComponent } from './center/center.component';
     ProjectsComponent,
     SocialsComponent,
     TeamComponent,
-    ResponsiveTeamComponent],
+    ResponsiveTeamComponent,
+    quotesComponent],
   exports: [
       CenterComponent,
       FooterComponent, 
@@ -34,7 +36,9 @@ import { CenterComponent } from './center/center.component';
       PartnershipComponent,
       ProjectsComponent,
       SocialsComponent,
-      TeamComponent],
+      TeamComponent,
+      ResponsiveTeamComponent,
+      quotesComponent],
   imports: [
     CommonModule
   ]

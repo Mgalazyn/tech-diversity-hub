@@ -25,6 +25,15 @@
     overscroll-behavior-inline: contain;
 }
 
+.text-wrapper {
+    font-size: 18px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 /* Webkit scrollbar styling */
 .cards-wrapper::-webkit-scrollbar {

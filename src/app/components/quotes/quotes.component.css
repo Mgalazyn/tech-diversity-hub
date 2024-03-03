@@ -1,0 +1,29 @@
+
+
+.quotes-wrapper {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    gap: 20px;
+    width: 100%;
+}
+
+.quotes-link {
+    text-decoration: none;
+    font-weight: 200;
+    color: black;
+}
+
+.quotes-title {
+    position: relative;
+}
+
+.title-line {
+    position: absolute;
+    bottom: -5px; /* Adjust as needed */
+    left: 0;
+    width: 7%;
+    height: 8px; /* Adjust as needed */
+    background-image: linear-gradient(to right, rgb(0, 71, 0), rgb(255, 166, 0)); /* Change colors as needed */
+    border: none;
+}
