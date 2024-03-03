@@ -48,7 +48,7 @@
 
 .card {
     width: 100%;
-    max-width: 24rem;
+    max-width: 22rem;
     margin: 20px;
     box-shadow: var(--shadow-2);
 }
