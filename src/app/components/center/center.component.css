@@ -38,12 +38,42 @@
 }
 
 .card h1 {
-    margin-top: 50%;
+    margin-top: 35%;
     font-size: 44px;
 }
 
 .card p {
     font-size: 16px;
+}
+
+.quotes-wrapper {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    gap: 20px;
+    width: 100%;
+}
+.quotes-wrapper li {
+    list-style: none;
+}
+.quotes-link {
+    text-decoration: none;
+    font-weight: 200;
+    color: black;
+}
+
+.quotes-title {
+    position: relative;
+}
+
+.title-line {
+    position: absolute;
+    bottom: -5px; /* Adjust as needed */
+    left: 0;
+    width: 15%;
+    height: 8px; /* Adjust as needed */
+    background-image: linear-gradient(to right, rgb(17, 80, 17), rgb(202, 74, 0)); /* Change colors as needed */
+    border: none;
 }
 
 @media (max-width: 1386px) {
