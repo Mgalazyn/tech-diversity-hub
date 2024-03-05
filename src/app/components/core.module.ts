@@ -13,6 +13,7 @@ import { CenterComponent } from './center/center.component';
 import { quotesComponent } from './quotes/quotes.component';
 import { Projects2Component } from './projects2/projects2.component';
 import { Mission2Component } from './mission2/mission2.component';
+import { Mission3Component } from './mission3/mission3.component';
 
 
 
@@ -30,7 +31,8 @@ import { Mission2Component } from './mission2/mission2.component';
     ResponsiveTeamComponent,
     quotesComponent,
     Projects2Component,
-    Mission2Component],
+    Mission2Component,
+    Mission3Component],
   exports: [
       CenterComponent,
       FooterComponent, 
@@ -44,7 +46,8 @@ import { Mission2Component } from './mission2/mission2.component';
       ResponsiveTeamComponent,
       quotesComponent,
       Projects2Component,
-      Mission2Component],
+      Mission2Component,
+      Mission3Component],
   imports: [
     CommonModule
   ]
